@@ -27,7 +27,7 @@ Features labs 1-4: frames, lists/tables, form validation, alerts/confirms/prompt
 
 ## Setup & Usage 🛠️
 
-1. Clone: `git clone https://github.com/yourusername/web-resume-labs.git`  
+1. Clone: `git clone https://github.com/Nipplexxx/web-resume-labs.git`  
 2. Open `Main.html` in browser.  
 3. Interact: Fill form, click buttons for modals/events/video 🎉.
 
