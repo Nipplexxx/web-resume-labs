@@ -1,0 +1,46 @@
+<HTML>
+    <HEAD>
+        <TITLE>Приветствие</TITLE>
+        <LINK REL="stylesheet" TYPE="text/css" HREF="styles.css">
+        <SCRIPT SRC="script.js"></SCRIPT>
+    </HEAD>
+    <BODY CLASS="greeting-body" ONLOAD="showAlert()">
+        <H2 CLASS="greeting-header">Добро пожаловать!</H2>
+        <P CLASS="greeting-text">Это мое резюме. Слева — основная информация.</P> <!-- Убрали onmouseover -->
+        <BUTTON CLASS="win8-button" ONCLICK="openDeveloperWindow()">Информация о разработчике</BUTTON>
+        <BUTTON CLASS="win8-button" ONCLICK="showConfirm()">Узнать больше о резюме</BUTTON> <!-- Добавили кнопку для confirm -->
+
+        <!-- Форма регистрации (убрали onfocus с логина) -->
+        <DIV CLASS="registration-container">
+            <H2 CLASS="registration-header">Регистрация пользователя</H2>
+            <FORM ID="registrationForm" ONSUBMIT="validateForm(); return false;">
+                <LABEL FOR="surname">Фамилия:</LABEL><BR>
+                <INPUT TYPE="text" ID="surname" NAME="surname" REQUIRED><BR><BR>
+
+                <LABEL FOR="name">Имя:</LABEL><BR>
+                <INPUT TYPE="text" ID="name" NAME="name" REQUIRED><BR><BR>
+
+                <LABEL FOR="patronymic">Отчество:</LABEL><BR>
+                <INPUT TYPE="text" ID="patronymic" NAME="patronymic" REQUIRED><BR><BR>
+
+                <LABEL>Пол:</LABEL><BR>
+                <INPUT TYPE="radio" ID="male" NAME="gender" VALUE="male" REQUIRED>
+                <LABEL FOR="male">Мужской</LABEL><BR>
+                <INPUT TYPE="radio" ID="female" NAME="gender" VALUE="female">
+                <LABEL FOR="female">Женский</LABEL><BR><BR>
+
+                <LABEL FOR="login">Логин:</LABEL><BR>
+                <INPUT TYPE="text" ID="login" NAME="login" REQUIRED><BR><BR> <!-- Убрали onfocus -->
+
+                <LABEL FOR="password">Пароль:</LABEL><BR>
+                <INPUT TYPE="password" ID="password" NAME="password" REQUIRED><BR><BR>
+
+                <LABEL FOR="email">Email:</LABEL><BR>
+                <INPUT TYPE="email" ID="email" NAME="email" REQUIRED><BR><BR>
+
+                <INPUT TYPE="submit" VALUE="Зарегистрироваться">
+            </FORM>
+            <BUTTON CLASS="win8-button" ONCLICK="showPrompt()">Показать подсказку для логина</BUTTON> <!-- Добавили кнопку для prompt -->
+        </DIV>
+    </BODY>
+</HTML>

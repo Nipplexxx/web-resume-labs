@@ -1,0 +1,319 @@
+/* Универсальный селектор для сброса отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Переопределение body по умолчанию */
+body {
+    background-color: #F0F0F0;
+    font-size: 16px;
+    color: #333333;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+/* Контейнер для резюме с grid для плиток */
+.resume-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Общий стиль для плиток (tiles) */
+.tile {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    padding: 20px;
+    border-radius: 4px; /* Легкие скругления */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Мягкая тень */
+    transition: transform 0.2s; /* Анимация при ховере */
+}
+
+.tile:hover {
+    transform: scale(1.02); /* Легкое увеличение при ховере */
+}
+
+/* Цвета плиток как в Metro (разные акценты) */
+.personal-tile {
+    background-color: #E6F7FF;
+}
+
+.education-tile {
+    background-color: #F0FDF4;
+}
+
+.hobbies-tile {
+    background-color: #FFF7ED;
+}
+
+.friends-tile {
+    background-color: #FDF2F8;
+}
+
+.family-tile {
+    background-color: #F3F4F6;
+}
+
+.address-tile {
+    background-color: #EFF6FF;
+}
+
+.additional-tile {
+    background-color: #F9FAFB;
+}
+
+/* Теговый селектор для h1 */
+h1 {
+    color: #0078D7;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Для h2, h3 */
+h2, h3 {
+    color: #0078D7;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Свойства ссылок с псевдоклассами */
+/* Цвет и оформление обычной ссылки */
+a:link {
+    color: #0078D7;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Посещенная */
+a:visited {
+    color: #5C2D91;
+}
+
+/* Активная */
+a:active {
+    color: #D83B01;
+}
+
+/* Ховер */
+a:hover {
+    color: #00A4EF;
+    text-decoration: underline;
+}
+
+/* Классы для Resume.html */
+.personal-info {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.bold-label {
+    font-weight: bold;
+    color: #D83B01;
+}
+
+.group-info {
+    font-size: 16px;
+    color: #5C2D91;
+    margin-bottom: 15px;
+}
+
+.photo {
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    border: 2px solid #0078D7;
+    max-width: 150px;
+    height: auto;
+}
+
+.email-link {
+    text-align: center;
+    font-weight: bold;
+}
+
+.education-info {
+    font-style: italic;
+    color: #333333;
+}
+
+.hobbies-label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.roman-list {
+    list-style-type: upper-roman;
+    margin-left: 20px;
+}
+
+.roman-list li {
+    color: #333333;
+}
+
+.friends-label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+.circle-list {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.circle-list li {
+    color: #333333;
+}
+
+.family-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+    table-layout: fixed;
+}
+
+.family-table th {
+    background-color: #0078D7;
+    color: #FFFFFF;
+    padding: 6px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.family-table td {
+    border: 1px solid #DDDDDD;
+    padding: 6px;
+    word-wrap: break-word;
+}
+
+.row1 {
+    background-color: #E6F7FF;
+}
+
+.row2 {
+    background-color: #F0FDF4;
+}
+
+.row3 {
+    background-color: #FFF7ED;
+}
+
+.row4 {
+    background-color: #FDF2F8;
+}
+
+.address-info {
+    text-align: center;
+    text-decoration: line-through;
+    color: #D83B01;
+    font-size: 18px;
+}
+
+/* Класс для body в Greeting */
+.greeting-body {
+    background-color: #FEF7F4;
+    color: #1F2937;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Класс для h2 в Greeting */
+.greeting-header {
+    color: #3B82F6;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Класс для p в Greeting */
+.greeting-text {
+    font-style: italic;
+    color: #4B5563;
+    margin-bottom: 20px;
+}
+
+/* Кнопка в стиле Win8 (плоская, цветная, с hover) */
+.win8-button {
+    background-color: #0078D7;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.win8-button:hover {
+    background-color: #00A4EF;
+    transform: scale(1.05);
+}
+
+.win8-button:active {
+    background-color: #005A9E;
+}
+
+/* Контейнер для формы регистрации */
+.registration-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок формы */
+.registration-header {
+    color: #0078D7;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Стили для формы */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"], form input[type="password"], form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+}
+
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #0078D7;
+    color: #FFFFFF;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #00A4EF;
+}
